@@ -90,7 +90,7 @@ public class mainpage extends JFrame {
 		JButton btnNewButton_2 = new JButton("Student");
 		btnNewButton_2.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				setVisible(false);
+				setVisible(true);
 				new studentspage().setVisible(true);;
 				
 			}
@@ -106,6 +106,8 @@ public class mainpage extends JFrame {
 		JButton btnNewButton_3 = new JButton("Teacher");
 		btnNewButton_3.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				setVisible(false);
+				new chooseclass().setVisible(true);
 			}
 		});
 		btnNewButton_3.setIcon(new ImageIcon("C:\\Users\\mike\\Desktop\\java images\\teacher.png"));
